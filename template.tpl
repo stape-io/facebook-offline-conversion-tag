@@ -439,7 +439,7 @@ const traceId = isLoggingEnabled ? getRequestHeader('trace-id') : undefined;
 
 const eventData = getAllEventData();
 
-const apiVersion = '14.0';
+const apiVersion = '15.0';
 const postUrl = 'https://graph.facebook.com/v' + apiVersion + '/' + enc(data.offlineEventSetId) + '/events?access_token=' + enc(data.accessToken);
 const mappedEventData = mapEvent(eventData, data);
 const postBody = {data: [mappedEventData], upload_tag: data.uploadTag};
