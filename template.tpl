@@ -238,6 +238,10 @@ ___TEMPLATE_PARAMETERS___
               {
                 "value": "item_number",
                 "displayValue": "Item number"
+              },
+              {
+                "value": "action_source",
+                "displayValue": "Action Source"
               }
             ]
           },
@@ -526,6 +530,7 @@ function mapEvent(eventData, data) {
     let mappedData = {
         event_name: eventName,
         event_time: Math.round(getTimestampMillis() / 1000),
+        action_source: 'other',
         custom_data: {},
         match_keys: {}
     };
