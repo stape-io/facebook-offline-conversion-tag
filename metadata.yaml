@@ -1,5 +1,7 @@
 homepage: "https://stape.io/"
 versions:
+  - sha: 85fa2a7e168ac3cb0ed5c0fffb78db66f85ac6d7
+    changeNotes: Add action source.
   - sha: 7f079fb4960e41108015cda5a081569304012419
     changeNotes: Update api version.
   - sha: b8e30cac744bb02d78ebf8e47c0564545179cfb6
