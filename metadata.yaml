@@ -1,5 +1,7 @@
 homepage: "https://stape.io/"
 versions:
+  - sha: 63083ad24e90573ff7b8a735902c4c91d3ebf657
+    changeNotes: Fix log name
   - sha: 4dd4bc606a2a302a8691e59370284de8ae541250
     changeNotes: Remove action source.
   - sha: 85fa2a7e168ac3cb0ed5c0fffb78db66f85ac6d7
