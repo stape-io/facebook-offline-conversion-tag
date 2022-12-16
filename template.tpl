@@ -446,7 +446,7 @@ const postBody = {data: [mappedEventData], upload_tag: data.uploadTag};
 
 if (isLoggingEnabled) {
     logToConsole(JSON.stringify({
-        'Name': 'Facebook Offline Conversion',
+        'Name': 'FacebookOfflineConversion',
         'Type': 'Request',
         'TraceId': traceId,
         'EventName': mappedEventData.event_name,
@@ -459,7 +459,7 @@ if (isLoggingEnabled) {
 sendHttpRequest(postUrl, (statusCode, headers, body) => {
     if (isLoggingEnabled) {
         logToConsole(JSON.stringify({
-            'Name': 'Facebook Offline Conversion',
+            'Name': 'FacebookOfflineConversion',
             'Type': 'Response',
             'TraceId': traceId,
             'EventName': mappedEventData.event_name,
