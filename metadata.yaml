@@ -1,5 +1,7 @@
 homepage: "https://stape.io/"
 versions:
+  - sha: 7d88e2a483b28ce42331027acf46a5ca0d5a5886
+    changeNotes: Updated to api v16.
   - sha: 63083ad24e90573ff7b8a735902c4c91d3ebf657
     changeNotes: Fix log name
   - sha: 4dd4bc606a2a302a8691e59370284de8ae541250
