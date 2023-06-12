@@ -191,6 +191,13 @@ ___TEMPLATE_PARAMETERS___
     "help": "Scope used to resolve extern_id or tpid. Can be another data set or data partner ID."
   },
   {
+    "type": "CHECKBOX",
+    "name": "useOptimisticScenario",
+    "checkboxText": "Use Optimistic Scenario",
+    "simpleValueType": true,
+    "help": "The tag will call gtmOnSuccess() without waiting for a response from the API"
+  },
+  {
     "displayName": "Server Event Data Override",
     "name": "serverEventDataListGroup",
     "groupStyle": "ZIPPY_CLOSED",
@@ -480,17 +487,21 @@ sendHttpRequest(
         })
       );
     }
-
-    if (statusCode >= 200 && statusCode < 300) {
-      data.gtmOnSuccess();
-    } else {
-      data.gtmOnFailure();
+     if (!data.useOptimisticScenario) {
+      if (statusCode >= 200 && statusCode < 300) {
+        data.gtmOnSuccess();
+      } else {
+        data.gtmOnFailure();
+      }
     }
   },
   { headers: { 'content-type': 'application/json' }, method: 'POST' },
   JSON.stringify(postBody)
 );
 
+if (data.useOptimisticScenario) {
+  data.gtmOnSuccess();
+}
 function getEventName(data) {
   if (data.eventType === 'inherit') {
     let eventName = eventData.event_name;
