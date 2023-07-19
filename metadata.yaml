@@ -1,5 +1,7 @@
 homepage: "https://stape.io/"
 versions:
+  - sha: c17b013a31c91176c093ab7e58aacf4d6d35852d
+    changeNotes: Tag Deprecated.
   - sha: 7d88e2a483b28ce42331027acf46a5ca0d5a5886
     changeNotes: Updated to api v16.
   - sha: 63083ad24e90573ff7b8a735902c4c91d3ebf657
