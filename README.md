@@ -1,4 +1,8 @@
-# Facebook Offline Conversion Tag for Google Tag Manager Server Container
+# [Deprecated] Facebook Offline Conversion Tag for Google Tag Manager Server Container
+
+Tag is deprecated because Meta deprecated Offline Conversions API. [More information](https://developers.facebook.com/docs/marketing-api/offline-conversions/).
+
+Please use the [new method of tracking offline conversions](https://stape.io/blog/facebook-offline-conversion-using-server-gtm#how-to-set-up-facebook-offline-conversions-using-s-gtm). 
 
 Facebook offline conversion tag for server Google Tag Manager container allows sending events to Facebook offline conversions.
 
